@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClosedAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo" width ="50" class="picLogo"><b>ClosedAI</b></a>
+            <nav>
+                <a href="#caption1"><b>Home</b></a>
+                <a href="#caption2"><b>Load Image</b></a>
+            </nav>
+        </header>
+        <section id ="caption1" class="banner">
+            <div class="banner2">
+                <div class="descriptionInfo">
+                    <h1>INFRASTRUCTURE OBJECT RECOGNITION</h1>
+                    <p>Here you can load a high spatial resolution satellite imagery to recognize multi-story buildings in it. Just click the button below!</p>
+                    <a href="#caption2" class="banner2 button"><b>Load Image</b></a>
+                </div>
+                <div class="img-comp-container">
+                    <div class="img-comp-img">
+                        <img src="img/img1.png">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="img/img2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id ="caption2" class="uploader">
+            <h1>Choose an Image</h1>
+            <div class="loadProgram">
+                <!-- <form enctype="multipart/form-data" method="post">
+                    <p>Choose an image</p>
+                    <p>
+                        <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                        <input type="submit" value="Send">
+                    </p>
+                </form> -->
+                <div id="container">
+                  <div id="drop-zone">
+                      <p><b>Drop Here</b></p>
+                  </div>
+                  <div id="content">
+                    <p>Your image will appear here...</p>
+                  </div>
+                </div>
+                <div id="container2">
+                    <div id="download-zone">
+                        <p><b>Download Here</b></p>
+                    </div>
+                    <div id="result">
+                        <p>Here will be the result...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            &#169; ClosedAI 2023
+        </footer>
+    </div>
+    <script>
+        initComparisons();
+        dragDrop();
+    </script>
+</body>
+</html>
